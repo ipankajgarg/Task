@@ -222,6 +222,106 @@ class About extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
 
 /***/ }),
 
+/***/ "./components/home/BrowseMatrimonyProfiles.js":
+/*!****************************************************!*\
+  !*** ./components/home/BrowseMatrimonyProfiles.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _helpers_staticData__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/staticData */ "./helpers/staticData.js");
+var _jsxFileName = "/home/pankaj/Documents/my-work/with-redux-thunk/components/home/BrowseMatrimonyProfiles.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+function BrowseMatrimonyProfiles() {
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "jsx-2192969299" + " " + "container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, _helpers_staticData__WEBPACK_IMPORTED_MODULE_2__["browseData"].map(function (data, index) {
+    return __jsx("div", {
+      style: {
+        width: index % 2 == 0 ? "60%" : "40%",
+        maxWidth: index % 2 == 0 ? "60%" : "40%",
+        textAlign: "left"
+      },
+      className: "jsx-2192969299" + " " + "list",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      },
+      __self: this
+    }, __jsx("p", {
+      className: "jsx-2192969299",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }, data.title.display), __jsx("ul", {
+      className: "jsx-2192969299",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, __jsx("li", {
+      className: "jsx-2192969299",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, __jsx("a", {
+      className: "jsx-2192969299",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, data.list[0].display)), __jsx("li", {
+      className: "jsx-2192969299",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, __jsx("a", {
+      className: "jsx-2192969299",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, data.list[1].display))));
+  }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "2192969299",
+    __self: this
+  }, "ul.jsx-2192969299{padding:0px;margin:0px;list-style:none;}p.jsx-2192969299{color:#666666;font-size:13px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}li.jsx-2192969299{color:#9b9b9b;font-size:12px;}.container.jsx-2192969299{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0px 20px;}a.jsx-2192969299{line-height:3;text-overflow:ellipsis;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3Bhbmthai9Eb2N1bWVudHMvbXktd29yay93aXRoLXJlZHV4LXRodW5rL2NvbXBvbmVudHMvaG9tZS9Ccm93c2VNYXRyaW1vbnlQcm9maWxlcy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE4Qm9CLEFBR3lCLEFBS0UsQUFPQSxBQUtELEFBS0MsWUFyQkgsRUFLSSxBQU9BLEFBVVEsU0FyQlAsTUFLRyxBQU9yQixRQVVBLEVBckJBLFNBS3lCLHVCQUNQLEdBU0QsYUFSakIsNENBU2tCLGdCQUNsQiIsImZpbGUiOiIvaG9tZS9wYW5rYWovRG9jdW1lbnRzL215LXdvcmsvd2l0aC1yZWR1eC10aHVuay9jb21wb25lbnRzL2hvbWUvQnJvd3NlTWF0cmltb255UHJvZmlsZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBicm93c2VEYXRhIH0gZnJvbSBcIi4uLy4uL2hlbHBlcnMvc3RhdGljRGF0YVwiO1xuXG5mdW5jdGlvbiBCcm93c2VNYXRyaW1vbnlQcm9maWxlcygpIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAge2Jyb3dzZURhdGEubWFwKGZ1bmN0aW9uKGRhdGEsIGluZGV4KSB7XG4gICAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgIDxkaXZcbiAgICAgICAgICAgICAgY2xhc3NOYW1lPVwibGlzdFwiXG4gICAgICAgICAgICAgIHN0eWxlPXt7XG4gICAgICAgICAgICAgICAgd2lkdGg6IGluZGV4ICUgMiA9PSAwID8gXCI2MCVcIiA6IFwiNDAlXCIsXG4gICAgICAgICAgICAgICAgbWF4V2lkdGg6IGluZGV4ICUgMiA9PSAwID8gXCI2MCVcIiA6IFwiNDAlXCIsXG4gICAgICAgICAgICAgICAgdGV4dEFsaWduOiBcImxlZnRcIlxuICAgICAgICAgICAgICB9fVxuICAgICAgICAgICAgPlxuICAgICAgICAgICAgICA8cD57ZGF0YS50aXRsZS5kaXNwbGF5fTwvcD5cbiAgICAgICAgICAgICAgPHVsPlxuICAgICAgICAgICAgICAgIDxsaT5cbiAgICAgICAgICAgICAgICAgIDxhPntkYXRhLmxpc3RbMF0uZGlzcGxheX08L2E+XG4gICAgICAgICAgICAgICAgPC9saT5cbiAgICAgICAgICAgICAgICA8bGk+XG4gICAgICAgICAgICAgICAgICA8YT57ZGF0YS5saXN0WzFdLmRpc3BsYXl9PC9hPlxuICAgICAgICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICApO1xuICAgICAgICB9KX1cblxuICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgdWwge1xuICAgICAgICAgICAgcGFkZGluZzogMHB4O1xuICAgICAgICAgICAgbWFyZ2luOiAwcHg7XG4gICAgICAgICAgICBsaXN0LXN0eWxlOiBub25lO1xuICAgICAgICAgIH1cbiAgICAgICAgICBwIHtcbiAgICAgICAgICAgIGNvbG9yOiAjNjY2NjY2O1xuICAgICAgICAgICAgZm9udC1zaXplOiAxM3B4O1xuICAgICAgICAgICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICAgICAgICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgICAgICAgICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICAgICAgICB9XG4gICAgICAgICAgbGkge1xuICAgICAgICAgICAgY29sb3I6ICM5YjliOWI7XG4gICAgICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgLmNvbnRhaW5lciB7XG4gICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgZmxleC13cmFwOiB3cmFwO1xuICAgICAgICAgICAgbWFyZ2luOiAwcHggMjBweDtcbiAgICAgICAgICB9XG4gICAgICAgICAgYSB7XG4gICAgICAgICAgICBsaW5lLWhlaWdodDogMztcbiAgICAgICAgICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IEJyb3dzZU1hdHJpbW9ueVByb2ZpbGVzO1xuIl19 */\n/*@ sourceURL=/home/pankaj/Documents/my-work/with-redux-thunk/components/home/BrowseMatrimonyProfiles.js */")));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (BrowseMatrimonyProfiles);
+
+/***/ }),
+
 /***/ "./components/home/Caption.js":
 /*!************************************!*\
   !*** ./components/home/Caption.js ***!
@@ -525,8 +625,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DownloadApp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./DownloadApp */ "./components/home/DownloadApp.js");
 /* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./About */ "./components/home/About.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Footer */ "./components/home/Footer.js");
+/* harmony import */ var _BrowseMatrimonyProfiles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./BrowseMatrimonyProfiles */ "./components/home/BrowseMatrimonyProfiles.js");
 var _jsxFileName = "/home/pankaj/Documents/my-work/with-redux-thunk/components/home/Home.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -540,43 +642,49 @@ function Home() {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_bannerSection_Banner__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }), __jsx(_Caption__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }), __jsx(_MembershipDetail__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: this
   }), __jsx(_MatchProfiles__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
   }), __jsx(_DownloadApp__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
+    },
+    __self: this
+  }), __jsx(_BrowseMatrimonyProfiles__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
     },
     __self: this
   }), __jsx(_About__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 21
     },
     __self: this
   }), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 22
     },
     __self: this
   }));
@@ -595,10 +703,19 @@ function Home() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-responsive-carousel/lib/styles/carousel.min.css */ "./node_modules/react-responsive-carousel/lib/styles/carousel.min.css");
+/* harmony import */ var react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_responsive_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-responsive-carousel */ "react-responsive-carousel");
+/* harmony import */ var react_responsive_carousel__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/home/pankaj/Documents/my-work/with-redux-thunk/components/home/MatchProfiles.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
  // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -613,12 +730,66 @@ const settings = {
 
 function MatchProfiles() {
   return __jsx("div", {
+    className: "jsx-3122954223" + " " + "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 25
     },
     __self: this
-  });
+  }, __jsx("h3", {
+    className: "jsx-3122954223" + " " + "fontreg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "Matched By Jeevansathi"), __jsx("div", {
+    className: "jsx-3122954223" + " " + "carousel-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, __jsx(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_3__["Carousel"], {
+    showIndicators: false,
+    showStatus: false // autoPlay={true}
+    ,
+    showThumbs: false,
+    showArrows: true,
+    infiniteLoop: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, arr.map(function (image) {
+    return __jsx("div", {
+      className: "jsx-3122954223",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }, __jsx("img", {
+      src: image,
+      className: "jsx-3122954223",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }), __jsx("p", {
+      className: "jsx-3122954223",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }, "Here you go"));
+  }))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "3122954223",
+    __self: this
+  }, ".container.jsx-3122954223{padding:30px 0px 40px 0px;text-align:center;}h3.jsx-3122954223{color:#34495e;font-size:20px;margin:0px;margin-bottom:50px;}.carousel-container.jsx-3122954223{padding:0px 30px;}.slide.jsx-3122954223{background-color:white;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3Bhbmthai9Eb2N1bWVudHMvbXktd29yay93aXRoLXJlZHV4LXRodW5rL2NvbXBvbmVudHMvaG9tZS9NYXRjaFByb2ZpbGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQStDa0IsQUFHcUMsQUFJWixBQU1HLEFBR00sY0FSUixHQU1qQixNQUdBLEdBYm9CLEdBS1AsV0FDUSxJQUxyQixlQU1BIiwiZmlsZSI6Ii9ob21lL3Bhbmthai9Eb2N1bWVudHMvbXktd29yay93aXRoLXJlZHV4LXRodW5rL2NvbXBvbmVudHMvaG9tZS9NYXRjaFByb2ZpbGVzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IFwicmVhY3QtcmVzcG9uc2l2ZS1jYXJvdXNlbC9saWIvc3R5bGVzL2Nhcm91c2VsLm1pbi5jc3NcIjtcbmltcG9ydCB7IENhcm91c2VsIH0gZnJvbSBcInJlYWN0LXJlc3BvbnNpdmUtY2Fyb3VzZWxcIjtcblxuLy8gaW1wb3J0IFwic2xpY2stY2Fyb3VzZWwvc2xpY2svc2xpY2suY3NzXCI7XG4vLyBpbXBvcnQgXCJzbGljay1jYXJvdXNlbC9zbGljay9zbGljay10aGVtZS5jc3NcIjtcblxuY29uc3QgYXJyID0gW1xuICBcIi4uLy4uL3N0YXRpYy9pbWFnZXMvbmhtX2ltZzEuanBlZ1wiLFxuICBcIi4uLy4uL3N0YXRpYy9pbWFnZXMvbmhtX2ltZzIuanBlZ1wiLFxuICBcIi4uLy4uL3N0YXRpYy9pbWFnZXMvbmhtX2ltZzMuanBlZ1wiLFxuICBcIi4uLy4uL3N0YXRpYy9pbWFnZXMvbmhtX2ltZzQuanBlZ1wiXG5dO1xuXG5jb25zdCBzZXR0aW5ncyA9IHtcbiAgZG90czogdHJ1ZSxcbiAgaW5maW5pdGU6IHRydWUsXG4gIHNwZWVkOiA1MDAsXG4gIHNsaWRlc1RvU2hvdzogMSxcbiAgc2xpZGVzVG9TY3JvbGw6IDFcbn07XG5cbmZ1bmN0aW9uIE1hdGNoUHJvZmlsZXMoKSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgIDxoMyBjbGFzc05hbWU9XCJmb250cmVnXCI+TWF0Y2hlZCBCeSBKZWV2YW5zYXRoaTwvaDM+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY2Fyb3VzZWwtY29udGFpbmVyXCI+XG4gICAgICAgIDxDYXJvdXNlbFxuICAgICAgICAgIHNob3dJbmRpY2F0b3JzPXtmYWxzZX1cbiAgICAgICAgICBzaG93U3RhdHVzPXtmYWxzZX1cbiAgICAgICAgICAvLyBhdXRvUGxheT17dHJ1ZX1cbiAgICAgICAgICBzaG93VGh1bWJzPXtmYWxzZX1cbiAgICAgICAgICBzaG93QXJyb3dzPXt0cnVlfVxuICAgICAgICAgIGluZmluaXRlTG9vcD17dHJ1ZX1cbiAgICAgICAgPlxuICAgICAgICAgIHthcnIubWFwKGZ1bmN0aW9uKGltYWdlKSB7XG4gICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgIDxpbWcgc3JjPXtpbWFnZX0gLz5cbiAgICAgICAgICAgICAgICA8cD5IZXJlIHlvdSBnbzwvcD5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICApO1xuICAgICAgICAgIH0pfVxuICAgICAgICA8L0Nhcm91c2VsPlxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgLmNvbnRhaW5lciB7XG4gICAgICAgICAgcGFkZGluZzogMzBweCAwcHggNDBweCAwcHg7XG4gICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICAgICB9XG4gICAgICAgIGgzIHtcbiAgICAgICAgICBjb2xvcjogIzM0NDk1ZTtcbiAgICAgICAgICBmb250LXNpemU6IDIwcHg7XG4gICAgICAgICAgbWFyZ2luOiAwcHg7XG4gICAgICAgICAgbWFyZ2luLWJvdHRvbTogNTBweDtcbiAgICAgICAgfVxuICAgICAgICAuY2Fyb3VzZWwtY29udGFpbmVyIHtcbiAgICAgICAgICBwYWRkaW5nOiAwcHggMzBweDtcbiAgICAgICAgfVxuICAgICAgICAuc2xpZGUge1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IE1hdGNoUHJvZmlsZXM7XG4iXX0= */\n/*@ sourceURL=/home/pankaj/Documents/my-work/with-redux-thunk/components/home/MatchProfiles.js */"));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (MatchProfiles);
@@ -977,6 +1148,260 @@ function SearchBox() {
 
 /***/ }),
 
+/***/ "./helpers/staticData.js":
+/*!*******************************!*\
+  !*** ./helpers/staticData.js ***!
+  \*******************************/
+/*! exports provided: browseData */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "browseData", function() { return browseData; });
+const browseData = [{
+  title: {
+    display: "Bihari Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Bihar Brides",
+    link: ""
+  }, {
+    display: "Bihari Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Tamil Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Tamil Brides",
+    link: ""
+  }, {
+    display: "Tamil Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Bengali Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Bengali Brides",
+    link: ""
+  }, {
+    display: "Bengali Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Telegu Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Telegu Brides",
+    link: ""
+  }, {
+    display: "Telegu Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Hindi Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Hindi Brides",
+    link: ""
+  }, {
+    display: "Hindi Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Hindi-UP Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Hindi-UP Brides",
+    link: ""
+  }, {
+    display: "Hindi-UP Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Gujarati Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Gujarati Brides",
+    link: ""
+  }, {
+    display: "Gujarati Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Hindi-MP Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Hindi-MP Brides",
+    link: ""
+  }, {
+    display: "Hindi-MP Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Kannada Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Kannada Brides",
+    link: ""
+  }, {
+    display: "Kannada Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Konkani Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Konkani Brides",
+    link: ""
+  }, {
+    display: "Konkani Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Malayalam Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Malayalam Brides",
+    link: ""
+  }, {
+    display: "Malayalam Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Himachali Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Himachali Brides",
+    link: ""
+  }, {
+    display: "Himachali Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Marathi Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Marathi Brides",
+    link: ""
+  }, {
+    display: "Marathi Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Haryanvi Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Haryanvi Brides",
+    link: ""
+  }, {
+    display: "Haryanvi Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Oriya Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Oriya Brides",
+    link: ""
+  }, {
+    display: "Oriya Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Assamese Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Assamese Brides",
+    link: ""
+  }, {
+    display: "Assamese Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Punjabi Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Punjabi Brides",
+    link: ""
+  }, {
+    display: "Punjabi Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Kashmiri Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Kashmiri Brides",
+    link: ""
+  }, {
+    display: "Kashmiri Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Rajasthani Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Rajasthani Brides",
+    link: ""
+  }, {
+    display: "Rajasthani Grooms",
+    link: ""
+  }]
+}, {
+  title: {
+    display: "Sikkim/Nepali Matrimonial",
+    link: ""
+  },
+  list: [{
+    display: "Sikkim/Nepali Brides",
+    link: ""
+  }, {
+    display: "Sikkim/Nepali Grooms",
+    link: ""
+  }]
+}];
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -1015,6 +1440,17 @@ function _defineProperty(obj, key, value) {
 
   return obj;
 }
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-carousel/lib/styles/carousel.min.css":
+/*!****************************************************************************!*\
+  !*** ./node_modules/react-responsive-carousel/lib/styles/carousel.min.css ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -1095,6 +1531,17 @@ module.exports = require("core-js/library/fn/object/define-property");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-responsive-carousel":
+/*!********************************************!*\
+  !*** external "react-responsive-carousel" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-responsive-carousel");
 
 /***/ }),
 

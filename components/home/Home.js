@@ -6,6 +6,7 @@ import MatchProfiles from "./MatchProfiles";
 import DownloadApp from "./DownloadApp";
 import About from "./About";
 import Footer from "./Footer";
+import BrowseMatrimonyProfiles from "./BrowseMatrimonyProfiles";
 
 function Home() {
   return (
@@ -15,6 +16,8 @@ function Home() {
       <MembershipDetail />
       <MatchProfiles />
       <DownloadApp />
+
+      <BrowseMatrimonyProfiles />
       <About />
       <Footer />
     </>
