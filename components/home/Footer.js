@@ -6,15 +6,15 @@ function Footer() {
       <div>
         <span className="white">Follow us on</span>
         <br />
-        <a>
+        <a className="facebook">
           {" "}
           <i></i>
         </a>
-        <a>
+        <a className="twitter">
           {" "}
           <i></i>
         </a>
-        <a>
+        <a className="linkedin">
           {" "}
           <i></i>
         </a>
@@ -38,6 +38,33 @@ function Footer() {
         h3 {
           font-size: 20px;
           margin: 5px 0px 0px;
+        }
+
+        .facebook {
+          background-image: url(../../static/images/homeSpriteNewFinal.png);
+          background-position: -137px -157px;
+          width: 28px;
+          height: 32px;
+        }
+        .twitter {
+          background-image: url(../../static/images/homeSpriteNewFinal.png);
+          background-position: -184px -157px;
+          width: 28px;
+          height: 32px;
+        }
+
+        .linkedin {
+          background-image: url(../../static/images/homeSpriteNewFinal.png);
+          background-position: -71px -91px;
+          width: 30px;
+          height: 34px;
+        }
+
+        a {
+          background-repeat: no-repeat;
+          text-align: center;
+          display: inline-block;
+          margin: 10px 10px 0px 0px;
         }
       `}</style>
     </div>

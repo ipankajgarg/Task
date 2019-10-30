@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -6,10 +6,16 @@ import { Carousel } from "react-responsive-carousel";
 // import "slick-carousel/slick/slick-theme.css";
 
 const arr = [
-  "../../static/images/nhm_img1.jpeg",
-  "../../static/images/nhm_img2.jpeg",
-  "../../static/images/nhm_img3.jpeg",
-  "../../static/images/nhm_img4.jpeg"
+  {
+    imageURL: "../../static/images/nhm_img1.jpeg",
+    text: "Abhinay weds Shalini"
+  },
+  { imageURL: "../../static/images/nhm_img2.jpeg", text: "Parul weds Vipin" },
+  {
+    imageURL: "../../static/images/nhm_img3.jpeg",
+    text: "Khushbu weds Shah Jaini"
+  },
+  { imageURL: "../../static/images/nhm_img4.jpeg", text: "Nikita weds Keval" }
 ];
 
 const settings = {
@@ -21,28 +27,32 @@ const settings = {
 };
 
 function MatchProfiles() {
+  const [count, setCount] = useState(0);
+
   return (
     <div className="container">
       <h3 className="fontreg">Matched By Jeevansathi</h3>
 
       <div className="carousel-container">
         <Carousel
+          onChange={data => setCount(data)}
           showIndicators={false}
           showStatus={false}
-          // autoPlay={true}
+          autoPlay={true}
           showThumbs={false}
           showArrows={true}
           infiniteLoop={true}
+          selectedItem={count}
         >
-          {arr.map(function(image) {
+          {arr.map(function(profile) {
             return (
               <div>
-                <img src={image} />
-                <p>Here you go</p>
+                <img src={profile.imageURL} />
               </div>
             );
           })}
         </Carousel>
+        <p className="fontreg">{arr[count].text}</p>
       </div>
 
       <style jsx>{`
