@@ -1,6 +1,12 @@
 const withCss = require("@zeit/next-css");
 
 module.exports = withCss({
+  cssModules: true,
+  cssModules: true,
+  cssLoaderOptions: {
+    importLoaders: 1,
+    localIdentName: "[local]___[hash:base64:5]"
+  },
   webpack: (config, { isServer }) => {
     if (isServer) {
       const antStyles = /antd\/.*?\/style\/css.*?/;

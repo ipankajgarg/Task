@@ -1,5 +1,5 @@
 import React from "react";
-import { browseData } from "../../helpers/staticData";
+import { browseData } from "../../static/data";
 
 function BrowseMatrimonyProfiles() {
   return (

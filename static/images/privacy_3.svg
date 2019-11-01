@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Privacy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16.5,11 C17.88,11 18.99,9.97333333 18.99,8.70833333 C18.99,7.44333333 17.88,6.41666667 16.5,6.41666667 C15.12,6.41666667 14,7.44333333 14,8.70833333 C14,9.97333333 15.12,11 16.5,11 Z M9,10.0833333 C10.66,10.0833333 11.99,8.855 11.99,7.33333333 C11.99,5.81166667 10.66,4.58333333 9,4.58333333 C7.34,4.58333333 6,5.81166667 6,7.33333333 C6,8.855 7.34,10.0833333 9,10.0833333 Z M16.5,12.8333333 C14.67,12.8333333 11,13.6766667 11,15.3541667 L11,16.5 C11,17.0041667 11.45,17.4166667 12,17.4166667 L21,17.4166667 C21.55,17.4166667 22,17.0041667 22,16.5 L22,15.3541667 C22,13.6766667 18.33,12.8333333 16.5,12.8333333 Z M9,11.9166667 C6.67,11.9166667 2,12.9891667 2,15.125 L2,16.5 C2,17.0041667 2.45,17.4166667 3,17.4166667 L9,17.4166667 L9,15.3541667 C9,14.575 9.33,13.2091667 11.37,12.1733333 C10.5,12.0083333 9.66,11.9166667 9,11.9166667 Z" id="path-1"></path>
+        <polygon id="path-3" points="10.4240354 -1.55653897 12.3764164 -1.50533417 13.0230642 27.0036386 11.0706832 26.9524338"></polygon>
+        <filter x="-115.4%" y="-3.5%" width="253.9%" height="107.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="-2" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.850980392   0 0 0 0 0.278431373   0 0 0 0 0.360784314  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Icons-/-Privacy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#D9475C" x="0" y="0" width="24" height="24"></rect>
+        <g id="Group-108" transform="translate(-1.000000, 0.000000)">
+            <g id="icon/action/supervisor_account_24px" transform="translate(1.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g fill-rule="nonzero"></g>
+                <g id="↳-Color" stroke-width="1" fill-rule="evenodd" mask="url(#mask-2)" fill="#FFFFFF">
+                    <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="22"></rect>
+                </g>
+            </g>
+            <g id="Rectangle-8" transform="translate(11.723550, 12.723550) rotate(-225.000000) translate(-11.723550, -12.723550) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "../../../static/theme";
-//import logo from "../../static/images/logo.png";
+//import logo from "../../../static/images/logo.png";
 
 //TODO
 //To make images importable https://github.com/twopluszero/next-images
@@ -8,30 +8,34 @@ import theme from "../../../static/theme";
 function Header() {
   return (
     <div className="container">
-      <div className="logo"></div>
+      <div className="logo">
+        {" "}
+        <a>
+          <img src="../../../static/images/js_logo.svg" />
+        </a>
+      </div>
       <div className="login caption white fontreg">
         <i className="user-icon white"></i>
         <span>Login</span>
       </div>
       <style jsx>{`
         .container {
-          background-color: ${theme.secondaryColor};
-
-          height: 40px;
+          background: rgba(0, 0, 0, 0.5);
+          padding: 8px 20px;
           display: flex;
           justify-content: space-between;
+          align-items: center;
         }
         .logo {
-          flex-basis: 118px;
-          background-color: white;
-          background-image: url(../../../static/images/homeSpriteNewFinal.png);
-          background-repeat: no-repeat;
-
-          background-position: -20px -151px;
+          width: 70px;
+          height: 26px;
+        }
+        .logo img {
+          width: 100%;
         }
         .login {
           line-height: 40px;
-          padding-right: 13px;
+
           font-size: 13px;
         }
         .user-icon {

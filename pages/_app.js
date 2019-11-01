@@ -16,12 +16,25 @@ class MyApp extends App {
             font-family: "Roboto Light, Arial, sans-serif, Helvetica Neue",
               Helvetica;
           }
+          h1,
+          h2,
+          h3,
+          h4,
+          h5 {
+            margin: 0px;
+          }
           .fontreg {
             font-family: "Roboto", "sans-serif";
             font-weight: 400;
           }
           .white {
             color: white;
+          }
+
+          ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
           }
         `}</style>
       </Provider>
