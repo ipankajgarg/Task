@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 //import MembershipDetail from "./OldMembershipDetail";
 import { membershipDetail } from "../../static/data";
-import Button from "../common/Button";
+import Icon from "../../static/svgHandler";
 
 const settings = {
   dots: false,
@@ -39,7 +39,8 @@ function MembershipPlans() {
             title,
             borderColor,
             buttonText,
-            buttonColor
+            buttonColor,
+            link
           },
           index
         ) {
@@ -52,25 +53,35 @@ function MembershipPlans() {
                 {title}
               </span>
 
-              {list.map(function({ text, iconColor, textColor }) {
+              {list.map(function({
+                text,
+                iconColor,
+                textColor,
+                iconStyle,
+                iconType
+              }) {
                 return (
                   <div style={{ height: 34 }}>
-                    <span style={{ color: iconColor }}>icon</span>
+                    {/* <span style={{ color: iconColor }}>icon</span> */}
+                    <Icon type={iconType} css={iconStyle} />
                     <span className="text" style={{ color: textColor }}>
                       {text}
                     </span>
                   </div>
                 );
               })}
+
               <div style={{ textAlign: "center" }}>
-                <button
-                  style={{
-                    backgroundColor: buttonColor,
-                    color: buttonTextColor
-                  }}
-                >
-                  {buttonText}
-                </button>
+                <a href={link}>
+                  <button
+                    style={{
+                      backgroundColor: buttonColor,
+                      color: buttonTextColor
+                    }}
+                  >
+                    {buttonText}
+                  </button>
+                </a>
               </div>
             </div>
           );
@@ -91,6 +102,7 @@ function MembershipPlans() {
           overflow-x: scroll;
           padding: 0px 24px;
           margin-top: 20px;
+          width: 600px;
         }
         .heading {
           padding: 0px 24px;
@@ -117,11 +129,11 @@ function MembershipPlans() {
           border-radius: 4px;
           margin-right: 15px;
           padding: 24px;
-          min-width: 70%;
+          // min-width: 70%;
         }
 
         .text {
-          font-size: 14px;
+          font-size: 13px;
           font-weight: 500;
           padding-left: 8px;
         }

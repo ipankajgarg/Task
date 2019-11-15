@@ -13,6 +13,14 @@ import PrivacySetting from "./PrivacySetting";
 import JSExclusive from "./JSExclusive";
 import AboutApp from "./AboutApp";
 import Community from "./Community";
+import Icon from "../../static/svgHandler";
+
+let iStyle = {
+  height: "22px",
+  verticalAlign: "middle",
+  width: "22px",
+  color: "#fff"
+};
 
 function Home() {
   const [imagesLoadingAfterScroll, changeLoading] = useState(false);
@@ -60,26 +68,6 @@ function Home() {
     var scHandler = debounce(handlePageScroll, 50);
     window.addEventListener("scroll", scHandler, true);
   }, []);
-  let floatReg = (
-    <div className="w-100 regFloatBtn" id="floatDivBtn">
-      <div
-        className="d-flex align-items-center floatDiv"
-        onClick={e => {
-          this.GAObject.gaTrack(
-            "",
-            "jsms",
-            "Homepage_R",
-            "registration floater "
-          );
-          window.location.href =
-            "/profile/registration_new.php?source=home_float";
-        }}
-      >
-        <span>Register Free</span>
-        <span className="nMargin"></span>
-      </div>
-    </div>
-  );
 
   return (
     <>
@@ -87,18 +75,20 @@ function Home() {
         <div
           className="d-flex align-items-center floatDiv"
           onClick={e => {
-            this.GAObject.gaTrack(
-              "",
-              "jsms",
-              "Homepage_R",
-              "registration floater "
-            );
+            // this.GAObject.gaTrack(
+            //   "",
+            //   "jsms",
+            //   "Homepage_R",
+            //   "registration floater "
+            // );
             window.location.href =
               "/profile/registration_new.php?source=home_float";
           }}
         >
           <span>Register Free</span>
-          <span className="nMargin"></span>
+          <span className="nMargin">
+            <Icon type={"chevron_right"} css={iStyle} />
+          </span>
         </div>
       </div>
       <Banner />
@@ -107,15 +97,9 @@ function Home() {
       <PrivacySetting />
       <MembershipPlans />
       <JSExclusive />
+      <MatchProfiles />
       <AboutApp />
 
-      {/* <Caption /> */}
-
-      <MatchProfiles />
-      {/* <DownloadApp /> */}
-
-      {/* <BrowseMatrimonyProfiles /> */}
-      {/* <About /> */}
       <Community />
       <Footer />
       <style jsx>{`
@@ -128,6 +112,7 @@ function Home() {
         .d-flex {
           display: flex !important;
           margin: 0 auto;
+          justify-content: space-around;
         }
         .align-items-center {
           align-items: center !important;

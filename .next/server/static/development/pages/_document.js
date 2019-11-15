@@ -1343,30 +1343,38 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2___default.a {
         lineNumber: 18
       },
       __self: this
-    }), __jsx("script", {
-      type: "text/javascript",
-      src: "../static/font.js",
+    }), __jsx("link", {
+      rel: "stylesheet",
+      href: "https://use.typekit.net/dsg7wdu.css",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 23
       },
       __self: this
+    }), __jsx("script", {
+      type: "text/javascript",
+      src: "../static/font.js",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
     })), __jsx("body", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 37
       },
       __self: this
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 38
       },
       __self: this
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 39
       },
       __self: this
     })));

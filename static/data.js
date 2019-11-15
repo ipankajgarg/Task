@@ -1,3 +1,22 @@
+const iStyle1 = {
+  height: "20px",
+  verticalAlign: "middle",
+  width: "20px",
+  color: "#d9475c"
+};
+const iStyle2 = {
+  height: "20px",
+  verticalAlign: "middle",
+  width: "20px",
+  color: "#8A9DB0 "
+};
+const iStyle3 = {
+  height: "20px",
+  verticalAlign: "middle",
+  width: "20px",
+  color: "#fff"
+};
+
 export const browseData = [
   {
     title: { display: "Bihari Matrimonial", link: "" },
@@ -215,45 +234,66 @@ export const membershipDetail = [
     buttonTextColor: "white",
     textColor: "black",
     title: "Free",
+    link: "profile/registration_new.php?source=home_plan",
     borderColor: "#d9475c",
     list: [
-      { iconColor: "#D9475C", text: "Browse Profiles", textColor: "black" },
+      {
+        iconColor: "#D9475C",
+        text: "Browse Profiles",
+        textColor: "black",
+        iconType: "check_circle",
+        iconStyle: iStyle1
+      },
       {
         iconColor: "#D9475C",
         text: "Shortlist & Send Interest",
-        textColor: "black"
+        textColor: "black",
+        iconType: "check_circle",
+        iconStyle: iStyle1
       },
 
       {
         iconColor: "#8A9DB0",
         text: "Message & chat with unlimited users",
-        textColor: "#8A9DB0"
+        textColor: "#8A9DB0",
+        iconType: "cross_circle",
+        iconStyle: iStyle2
       },
 
       {
         iconColor: "#8A9DB0",
         text: "View contacts of members you like",
-        textColor: "#8A9DB0"
+        textColor: "#8A9DB0",
+        iconType: "cross_circle",
+        iconStyle: iStyle2
       },
       {
         iconColor: "#8A9DB0",
         text: "Message & chat with unlimited users",
-        textColor: "#8A9DB0"
+        textColor: "#8A9DB0",
+        iconType: "cross_circle",
+        iconStyle: iStyle2
       },
       {
         iconColor: "#8A9DB0",
         text: "Priority customer support",
-        textColor: "#8A9DB0"
+        textColor: "#8A9DB0",
+        iconType: "cross_circle",
+        iconStyle: iStyle2
       },
       {
         iconColor: "#8A9DB0",
         text: "Make your contacts visible to others",
-        textColor: "#8A9DB0"
+        textColor: "#8A9DB0",
+        iconType: "cross_circle",
+        iconStyle: iStyle2
       },
       {
         iconColor: "#8A9DB0",
         text: "Profile Boost",
-        textColor: "#8A9DB0"
+        textColor: "#8A9DB0",
+        iconType: "cross_circle",
+        iconStyle: iStyle2
       }
     ]
   },
@@ -264,45 +304,66 @@ export const membershipDetail = [
     buttonTextColor: "#D9475C",
     textColor: "white",
     title: "Paid",
+    link: "profile/mem_comparison.php",
     borderColor: "white",
     list: [
-      { iconColor: "white", text: "Browse Profiles", textColor: "white" },
+      {
+        iconColor: "white",
+        text: "Browse Profiles",
+        textColor: "white",
+        iconType: "check_circle",
+        iconStyle: iStyle3
+      },
       {
         iconColor: "white",
         text: "Shortlist & Send Interest",
-        textColor: "white"
+        textColor: "white",
+        iconType: "check_circle",
+        iconStyle: iStyle3
       },
 
       {
         iconColor: "white",
         text: "Message & chat with unlimited users",
-        textColor: "white"
+        textColor: "white",
+        iconType: "check_circle",
+        iconStyle: iStyle3
       },
 
       {
         iconColor: "white",
         text: "View contacts of members you like",
-        textColor: "white"
+        textColor: "white",
+        iconType: "check_circle",
+        iconStyle: iStyle3
       },
       {
         iconColor: "white",
         text: "Message & chat with unlimited users",
-        textColor: "white"
+        textColor: "white",
+        iconType: "check_circle",
+        iconStyle: iStyle3
       },
       {
         iconColor: "white",
         text: "Priority customer support",
-        textColor: "white"
+        textColor: "white",
+        iconType: "check_circle",
+        iconStyle: iStyle3
       },
       {
         iconColor: "white",
         text: "Make your contacts visible to others",
-        textColor: "white"
+        textColor: "white",
+        iconType: "check_circle",
+        iconStyle: iStyle3
       },
       {
         iconColor: "white",
         text: "Profile Boost",
-        textColor: "white"
+        textColor: "white",
+        iconType: "check_circle",
+        iconStyle: iStyle3
       }
     ]
   }

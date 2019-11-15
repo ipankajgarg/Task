@@ -13,5 +13,5 @@ var loadFont = e => {
     t.send();
 };
 loadFont("https://fonts.googleapis.com/css?family=Cabin:400,500,600,700");
-loadFont("https://use.typekit.net/dsg7wdu.css");
+//loadFont("https://use.typekit.net/dsg7wdu.css");
 loadFont("https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700");

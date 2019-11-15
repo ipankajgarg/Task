@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import Icon from "../../static/svgHandler";
 // import Icon from "../../../common/components/svgHandler";
 // import GA from "../../../common/components/GA";
 // let API_SERVER_CONSTANTS
@@ -91,25 +92,35 @@ export default class Sec7links extends React.Component {
                                       onClick={e => {
                                         this.handleAccordian(key);
                                       }}
-                                      className=" w-100 btn btn-link d-flex"
+                                      className=" w-100 btn btn-link d-flex  justify-content-between align-items-center"
                                     >
                                       {item.displayName}
                                       <span
                                         className="m-0 ic1 show"
                                         id={`em${key}`}
                                       >
-                                        {/* <Icon type={'expand_more'}
-                                      css={{height: '22px',
-                                        width: '22px', color: '#4C6176'}}/> */}
+                                        <Icon
+                                          type={"expand_more"}
+                                          css={{
+                                            height: "22px",
+                                            width: "22px",
+                                            color: "#4C6176"
+                                          }}
+                                        />
                                       </span>
 
                                       <span
                                         className="m-0 ic2  hide"
                                         id={`el${key}`}
                                       >
-                                        {/* <Icon type={'expand_less'}
-                                      css={{height: '22px',
-                                        width: '22px', color: '#4C6176'}}/> */}
+                                        <Icon
+                                          type={"expand_less"}
+                                          css={{
+                                            height: "22px",
+                                            width: "22px",
+                                            color: "#4C6176"
+                                          }}
+                                        />
                                       </span>
                                     </div>
                                   </h5>

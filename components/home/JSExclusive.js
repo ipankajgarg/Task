@@ -39,6 +39,7 @@ function JSExclusive() {
           color: #8a9db0;
           margin-bottom: 4px;
           letter-spacing: 1.5px;
+          text-transform: uppercase;
         }
         span {
           font-size: 20px;

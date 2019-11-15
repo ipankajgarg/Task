@@ -28,7 +28,7 @@ function Footer() {
           deeper and personal interaction with prospective brides, grooms and/or
           families.
           <br />
-          <p style={{ display: isVisible ? "block" : "none" }}>
+          <p style={{ display: isVisible ? "block" : "none", marginTop: 0 }}>
             Please note: Jeevansathi is only meant for users with a bonafide
             intent to enter into a matrimonial alliance and is not meant for
             users interested in dating only. Jeevansathi platform should not be
@@ -51,16 +51,33 @@ function Footer() {
         <div>
           <span>Follow us on</span>
           <div>
-            <a className="facebook"></a>
-            <a className="twitter"></a>
-            <a className="instagram"></a>
+            <a
+              href="https://www.facebook.com/jeevansathi"
+              className="facebook"
+            ></a>
+            <a
+              href="https://www.twitter.com/jeevansathi"
+              className="twitter"
+            ></a>
+            <a
+              href="https://www.instagram.com/jeevansathi"
+              className="instagram"
+            ></a>
           </div>
         </div>
         <div className="shift-right">
           <span>App available on</span>
           <div>
-            <a className="play-store"></a>
-            <a className="app-store"></a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.jeevansathi.android"
+              target="_blank"
+              className="play-store"
+            ></a>
+            <a
+              href="https://itunes.apple.com/in/app/jeevansathi/id969994186?mt=8"
+              target="_blank"
+              className="app-store"
+            ></a>
           </div>
         </div>
       </div>
@@ -162,7 +179,7 @@ function Footer() {
         .toll-free b {
           display: block;
           margin-top: 10px;
-          font-size: 12px;
+          font-size: 16px;
           font-weight: normal;
         }
       `}</style>

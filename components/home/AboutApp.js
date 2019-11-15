@@ -31,6 +31,7 @@ function AboutApp() {
           color: #8a9db0;
           margin-bottom: 4px;
           letter-spacing: 1.5px;
+          text-transform: uppercase;
         }
         .group {
           background: #34495e;
