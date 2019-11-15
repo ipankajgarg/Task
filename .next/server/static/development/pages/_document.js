@@ -1301,7 +1301,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "/home/pankaj/Documents/my-work/with-redux-thunk/pages/_document.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -1313,71 +1312,21 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2___default.a {
   }
 
   render() {
-    return __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Html"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Head"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }, __jsx("link", {
+    return __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Html"], null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Head"], null, __jsx("link", {
       rel: "stylesheet",
       type: "text/css",
-      href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
+      href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     }), __jsx("link", {
       rel: "stylesheet",
       type: "text/css",
-      href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
+      href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
     }), __jsx("link", {
       rel: "stylesheet",
-      href: "https://use.typekit.net/dsg7wdu.css",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
+      href: "https://use.typekit.net/dsg7wdu.css"
     }), __jsx("script", {
       type: "text/javascript",
-      src: "../static/font.js",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35
-      },
-      __self: this
-    })), __jsx("body", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 37
-      },
-      __self: this
-    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 38
-      },
-      __self: this
-    }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39
-      },
-      __self: this
-    })));
+      src: "../static/font.js"
+    })), __jsx("body", null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], null)));
   }
 
 }

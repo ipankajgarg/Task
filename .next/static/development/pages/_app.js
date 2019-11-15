@@ -31,7 +31,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/pankaj/Documents/my-work/with-redux-thunk/lib/with-redux-store.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement;
 
 
@@ -122,12 +121,7 @@ function getOrCreateStore(initialState) {
         key: "render",
         value: function render() {
           return __jsx(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, this.props, {
-            reduxStore: this.reduxStore,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 47
-            },
-            __self: this
+            reduxStore: this.reduxStore
           }));
         }
       }]);
@@ -13070,7 +13064,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/pankaj/Documents/my-work/with-redux-thunk/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
 
@@ -13097,22 +13090,11 @@ function (_App) {
           pageProps = _this$props.pageProps,
           reduxStore = _this$props.reduxStore;
       return __jsx(react_redux__WEBPACK_IMPORTED_MODULE_10__["Provider"], {
-        store: reduxStore,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 10
-        },
-        __self: this
+        store: reduxStore
       }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
-        className: "jsx-1785085302" + " " + (pageProps && pageProps.className != null && pageProps.className || ""),
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11
-        },
-        __self: this
+        className: "jsx-1785085302" + " " + (pageProps && pageProps.className != null && pageProps.className || "")
       })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        id: "1785085302",
-        __self: this
+        id: "1785085302"
       }, "{font-weight:400;}body{margin:0px;font-family:\"Cabin\",sans-serif;}h1,h2,h3,h4,h5{margin:0px;}.fontreg{font-family:\"Cabin\",sans-serif;}.white{color:white;}ul{margin:0px;padding:0px;list-style:none;}.simple-steps .slick-dots{bottom:-100px;}.simple-steps .slick-list{margin-bottom:100px;}.simple-steps .slick-dots li button{display:none;}.simple-steps .slick-dots li{border-radius:50%;width:8px;height:8px;background:#dbdee3;}.simple-steps .slick-dots .slick-active{background:#d9475c;}a{color:white;-webkit-text-decoration:none;text-decoration:none;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3Bhbmthai9Eb2N1bWVudHMvbXktd29yay93aXRoLXJlZHV4LXRodW5rL3BhZ2VzL19hcHAuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWTJCLEFBR3dCLEFBUUEsQUFHcUIsQUFFaEIsQUFHSixBQUlELEFBTUcsQUFHTSxBQUdQLEFBSUssQUFNQyxBQUdQLFdBNUNvQixBQVFsQyxBQVljLENBSmQsQUE2QnVCLENBYnZCLENBTkEsRUFxQkYsRUFYYyxDQU1aLENBYkEsR0FSa0IsS0FnQkwsR0ExQmIsUUFXQSxBQWdCcUIsR0FyQ3JCLGdCQXNDQSxJQU9BIiwiZmlsZSI6Ii9ob21lL3Bhbmthai9Eb2N1bWVudHMvbXktd29yay93aXRoLXJlZHV4LXRodW5rL3BhZ2VzL19hcHAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgQXBwIGZyb20gXCJuZXh0L2FwcFwiO1xuaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHdpdGhSZWR1eFN0b3JlIGZyb20gXCIuLi9saWIvd2l0aC1yZWR1eC1zdG9yZVwiO1xuaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tIFwicmVhY3QtcmVkdXhcIjtcblxuY2xhc3MgTXlBcHAgZXh0ZW5kcyBBcHAge1xuICByZW5kZXIoKSB7XG4gICAgY29uc3QgeyBDb21wb25lbnQsIHBhZ2VQcm9wcywgcmVkdXhTdG9yZSB9ID0gdGhpcy5wcm9wcztcbiAgICByZXR1cm4gKFxuICAgICAgPFByb3ZpZGVyIHN0b3JlPXtyZWR1eFN0b3JlfT5cbiAgICAgICAgPENvbXBvbmVudCB7Li4ucGFnZVByb3BzfSAvPlxuXG4gICAgICAgIDxzdHlsZSBnbG9iYWwganN4PntgXG4gICAgICAgICAgYm9keSAge1xuICAgICAgICAgICAgbWFyZ2luOiAwcHg7XG4gICAgICAgICAgICBmb250LWZhbWlseTogXCJDYWJpblwiLCBzYW5zLXNlcmlmO1xuICAgICAgICAgIH1cbiAgICAgICAgICBoMSxcbiAgICAgICAgICBoMixcbiAgICAgICAgICBoMyxcbiAgICAgICAgICBoNCxcbiAgICAgICAgICBoNSB7XG4gICAgICAgICAgICBtYXJnaW46IDBweDtcbiAgICAgICAgICB9XG4gICAgICAgICAgLmZvbnRyZWcge1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IFwiQ2FiaW5cIiwgc2Fucy1zZXJpZjtcbiAgICAgICAgICB9XG4gICAgICAgICAgICBmb250LXdlaWdodDogNDAwO1xuICAgICAgICAgIH1cbiAgICAgICAgICAud2hpdGUge1xuICAgICAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICAgIH1cblxuICAgICAgICAgIHVsIHtcbiAgICAgICAgICAgIG1hcmdpbjogMHB4O1xuICAgICAgICAgICAgcGFkZGluZzogMHB4O1xuICAgICAgICAgICAgbGlzdC1zdHlsZTogbm9uZTtcbiAgICAgICAgICB9XG5cbiAgICAgICAgICAuc2ltcGxlLXN0ZXBzIC5zbGljay1kb3RzIHtcbiAgICAgICAgICAgIGJvdHRvbTogLTEwMHB4O1xuICAgICAgICAgIH1cbiAgICAgICAgICAuc2ltcGxlLXN0ZXBzIC5zbGljay1saXN0IHtcbiAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDEwMHB4O1xuICAgICAgICAgIH1cbiAgICAgICAgICAuc2ltcGxlLXN0ZXBzIC5zbGljay1kb3RzIGxpIGJ1dHRvbiB7XG4gICAgICAgICAgICBkaXNwbGF5OiBub25lO1xuICAgICAgICAgIH1cblxuICAgICAgICAgIC5zaW1wbGUtc3RlcHMgLnNsaWNrLWRvdHMgbGkge1xuICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgICAgICAgICAgd2lkdGg6IDhweDtcbiAgICAgICAgICAgIGhlaWdodDogOHB4O1xuICAgICAgICAgICAgYmFja2dyb3VuZDogI2RiZGVlMztcbiAgICAgICAgICB9XG4gICAgICAgICAgLnNpbXBsZS1zdGVwcyAuc2xpY2stZG90cyAuc2xpY2stYWN0aXZlIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6ICNkOTQ3NWM7XG4gICAgICAgICAgfVxuICAgICAgICAgIGEge1xuICAgICAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgPC9Qcm92aWRlcj5cbiAgICApO1xuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IHdpdGhSZWR1eFN0b3JlKE15QXBwKTtcbiJdfQ== */\n/*@ sourceURL=/home/pankaj/Documents/my-work/with-redux-thunk/pages/_app.js */"));
     }
   }]);
