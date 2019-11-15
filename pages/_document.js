@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript, script } from "next/document";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -7,7 +7,6 @@ class MyDocument extends Document {
   }
 
   render() {
-    console.log("dos");
     return (
       <Html>
         <Head>
@@ -21,6 +20,7 @@ class MyDocument extends Document {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
           ></link>
+          <script type="text/javascript" src="../static/font.js" />
         </Head>
         <body>
           <Main />

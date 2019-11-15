@@ -1313,17 +1313,16 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2___default.a {
   }
 
   render() {
-    console.log("dos");
     return __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Html"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 11
       },
       __self: this
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Head"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13
+        lineNumber: 12
       },
       __self: this
     }, __jsx("link", {
@@ -1332,7 +1331,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2___default.a {
       href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 13
       },
       __self: this
     }), __jsx("link", {
@@ -1341,7 +1340,15 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2___default.a {
       href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 18
+      },
+      __self: this
+    }), __jsx("script", {
+      type: "text/javascript",
+      src: "../static/font.js",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
       },
       __self: this
     })), __jsx("body", {

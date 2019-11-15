@@ -7,46 +7,53 @@ import theme from "../../../static/theme";
 
 function Header() {
   return (
-    <div className="container">
-      <div className="logo">
-        {" "}
-        <a>
-          <img src="../../../static/images/js_logo.svg" />
-        </a>
-      </div>
-      <div className="login caption white fontreg">
-        <i className="user-icon white"></i>
-        <span>Login</span>
-      </div>
-      <style jsx>{`
-        .container {
-          background: rgba(0, 0, 0, 0.5);
-          padding: 8px 20px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-        .logo {
-          width: 70px;
-          height: 26px;
-        }
-        .logo img {
-          width: 100%;
-        }
-        .login {
-          line-height: 40px;
+    <div style={{ position: "fixed", top: 0, width: "100%", zIndex: 500 }}>
+      <div id="headerContainer" className="container ">
+        <div className="logo">
+          {" "}
+          <a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+            <img src="../../../static/images/js_logo.svg" />
+          </a>
+        </div>
+        <div className="login caption white fontreg">
+          <a href="/login">
+            <i className="user-icon white"></i>
+            <span>Login</span>
+          </a>
+        </div>
+        <style jsx>{`
+          .container {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .headerBg2 {
+            background: #34495e;
+          }
+          .logo {
+            width: 70px;
+            height: 26px;
+          }
+          .logo img {
+            width: 100%;
+          }
+          .login {
+            line-height: 40px;
 
-          font-size: 13px;
-        }
-        .user-icon {
-          background-image: url(../../../static/images/homeSpriteNewFinal.png);
-          width: 20px;
-          background-position: -1px 2px;
-          height: 18px;
+            font-size: 13px;
+          }
+          .user-icon {
+            background-image: url(../../../static/images/homeSpriteNewFinal.png);
+            width: 20px;
+            background-position: -1px 2px;
+            height: 18px;
 
-          display: inline-block;
-        }
-      `}</style>
+            display: inline-block;
+          }
+        `}</style>
+      </div>
     </div>
   );
 }

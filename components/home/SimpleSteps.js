@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { simpleSteps } from "../../static/data";
+import Button from "../common/Button";
 
 const settings = {
   dots: true,
@@ -13,7 +14,7 @@ const settings = {
 
 function SimpleSteps() {
   return (
-    <div className="container">
+    <div className="container simple-steps">
       <h3>Three Simple Steps to</h3>
       <h2>
         Find the <strong>One for You</strong>
@@ -34,6 +35,12 @@ function SimpleSteps() {
           );
         })}
       </Slider>
+      <a href="profile/registration_new.php?source=home_hero">
+        <div className="button-container">
+          <button> Get Started by Registering Free</button>
+        </div>
+      </a>
+
       <style jsx>{`
         .list-container {
           text-align: center;
@@ -43,6 +50,7 @@ function SimpleSteps() {
         .container {
           padding: 32px 20px;
           background: #f8f9f9;
+          position: relative;
         }
 
         h3 {
@@ -51,6 +59,7 @@ function SimpleSteps() {
           color: #8a9db0;
           margin-bottom: 4px;
           letter-spacing: 1.5px;
+          text-transform: uppercase;
         }
         h2 {
           font-size: 20px;
@@ -77,8 +86,33 @@ function SimpleSteps() {
           font-style: normal;
           color: #d9475c;
         }
-        .slick-dot {
+        .button-container{
+          position: absolute;
+          bottom: 70px;
+          width: 100%;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          padding: 0 20px;
+          box-sizing: border-box;
+      }
+        }
+        button {
+          width:100%;
+          padding:10px 20px;
+          font-size: 14px;
+          color: #fff;
+          letter-spacing: 0;
+          /* padding: 10px 20px; */
           background: #d9475c;
+          display: inline-block;
+          font-weight: 600;
+          vertical-align: middle;
+          user-select: none;
+          border: 1px solid transparent;
+          line-height: 1.5;
+          border-radius: 0.25rem;
+          font-family: "Cabin", sans-serif;
         }
       `}</style>
     </div>

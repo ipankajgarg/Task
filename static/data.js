@@ -209,9 +209,13 @@ export const exclusiveList = [
 
 export const membershipDetail = [
   {
-    backgroundColor: "#D9475C",
+    backgroundColor: "white",
     buttonColor: "#D9475C",
+    buttonText: "Register Free",
+    buttonTextColor: "white",
+    textColor: "black",
     title: "Free",
+    borderColor: "#d9475c",
     list: [
       { iconColor: "#D9475C", text: "Browse Profiles", textColor: "black" },
       {
@@ -255,46 +259,50 @@ export const membershipDetail = [
   },
   {
     backgroundColor: "#D9475C",
-    buttonColor: "#D9475C",
-    title: "Free",
+    buttonColor: "white",
+    buttonText: "Browse Membership Plans",
+    buttonTextColor: "#D9475C",
+    textColor: "white",
+    title: "Paid",
+    borderColor: "white",
     list: [
-      { iconColor: "#D9475C", text: "Browse Profiles", textColor: "black" },
+      { iconColor: "white", text: "Browse Profiles", textColor: "white" },
       {
-        iconColor: "#D9475C",
+        iconColor: "white",
         text: "Shortlist & Send Interest",
-        textColor: "black"
+        textColor: "white"
       },
 
       {
-        iconColor: "#8A9DB0",
+        iconColor: "white",
         text: "Message & chat with unlimited users",
-        textColor: "#8A9DB0"
+        textColor: "white"
       },
 
       {
-        iconColor: "#8A9DB0",
+        iconColor: "white",
         text: "View contacts of members you like",
-        textColor: "#8A9DB0"
+        textColor: "white"
       },
       {
-        iconColor: "#8A9DB0",
+        iconColor: "white",
         text: "Message & chat with unlimited users",
-        textColor: "#8A9DB0"
+        textColor: "white"
       },
       {
-        iconColor: "#8A9DB0",
+        iconColor: "white",
         text: "Priority customer support",
-        textColor: "#8A9DB0"
+        textColor: "white"
       },
       {
-        iconColor: "#8A9DB0",
+        iconColor: "white",
         text: "Make your contacts visible to others",
-        textColor: "#8A9DB0"
+        textColor: "white"
       },
       {
-        iconColor: "#8A9DB0",
+        iconColor: "white",
         text: "Profile Boost",
-        textColor: "#8A9DB0"
+        textColor: "white"
       }
     ]
   }

@@ -11,10 +11,9 @@ class MyApp extends App {
         <Component {...pageProps} />
 
         <style global jsx>{`
-          body {
+          body  {
             margin: 0px;
-            font-family: "Roboto Light, Arial, sans-serif, Helvetica Neue",
-              Helvetica;
+            font-family: "Cabin", sans-serif;
           }
           h1,
           h2,
@@ -24,7 +23,8 @@ class MyApp extends App {
             margin: 0px;
           }
           .fontreg {
-            font-family: "Roboto", "sans-serif";
+            font-family: "Cabin", sans-serif;
+          }
             font-weight: 400;
           }
           .white {
@@ -35,6 +35,30 @@ class MyApp extends App {
             margin: 0px;
             padding: 0px;
             list-style: none;
+          }
+
+          .simple-steps .slick-dots {
+            bottom: -100px;
+          }
+          .simple-steps .slick-list {
+            margin-bottom: 100px;
+          }
+          .simple-steps .slick-dots li button {
+            display: none;
+          }
+
+          .simple-steps .slick-dots li {
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background: #dbdee3;
+          }
+          .simple-steps .slick-dots .slick-active {
+            background: #d9475c;
+          }
+          a {
+            color: white;
+            text-decoration: none;
           }
         `}</style>
       </Provider>
