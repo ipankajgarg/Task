@@ -27,65 +27,66 @@ function MembershipPlans() {
           Membership <span> Plans</span>{" "}
         </strong>
       </div>
+      <div style={{ overflowX: "scroll" }}>
+        <div className="slider">
+          {membershipDetail.map(function(
+            {
+              iconColor,
+              list,
+              backgroundColor,
+              buttonTextColor,
+              textColor,
+              title,
+              borderColor,
+              buttonText,
+              buttonColor,
+              link
+            },
+            index
+          ) {
+            return (
+              <div style={{ backgroundColor }} className="card">
+                <span
+                  className="card-heading"
+                  style={{ color: textColor, borderColor }}
+                >
+                  {title}
+                </span>
 
-      <div className="slider" {...settings}>
-        {membershipDetail.map(function(
-          {
-            iconColor,
-            list,
-            backgroundColor,
-            buttonTextColor,
-            textColor,
-            title,
-            borderColor,
-            buttonText,
-            buttonColor,
-            link
-          },
-          index
-        ) {
-          return (
-            <div style={{ backgroundColor }} className="card">
-              <span
-                className="card-heading"
-                style={{ color: textColor, borderColor }}
-              >
-                {title}
-              </span>
+                {list.map(function({
+                  text,
+                  iconColor,
+                  textColor,
+                  iconStyle,
+                  iconType
+                }) {
+                  return (
+                    <div style={{ height: 34 }}>
+                      {/* <span style={{ color: iconColor }}>icon</span> */}
+                      <Icon type={iconType} css={iconStyle} />
+                      <span className="text" style={{ color: textColor }}>
+                        {text}
+                      </span>
+                    </div>
+                  );
+                })}
 
-              {list.map(function({
-                text,
-                iconColor,
-                textColor,
-                iconStyle,
-                iconType
-              }) {
-                return (
-                  <div style={{ height: 34 }}>
-                    {/* <span style={{ color: iconColor }}>icon</span> */}
-                    <Icon type={iconType} css={iconStyle} />
-                    <span className="text" style={{ color: textColor }}>
-                      {text}
-                    </span>
-                  </div>
-                );
-              })}
-
-              <div style={{ textAlign: "center" }}>
-                <a href={link}>
-                  <button
-                    style={{
-                      backgroundColor: buttonColor,
-                      color: buttonTextColor
-                    }}
-                  >
-                    {buttonText}
-                  </button>
-                </a>
+                <div style={{ textAlign: "center" }}>
+                  <a href={link}>
+                    <button
+                      style={{
+                        backgroundColor: buttonColor,
+                        color: buttonTextColor
+                      }}
+                    >
+                      {buttonText}
+                    </button>
+                  </a>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
 
       <style jsx>{`
@@ -100,7 +101,7 @@ function MembershipPlans() {
         .slider {
           display: flex;
           overflow-x: scroll;
-          padding: 0px 24px;
+          padding: 0px 0px 0px 24px;
           margin-top: 20px;
           width: 600px;
         }
@@ -129,7 +130,7 @@ function MembershipPlans() {
           border-radius: 4px;
           margin-right: 15px;
           padding: 24px;
-          // min-width: 70%;
+          //min-width: 70%;
         }
 
         .text {
