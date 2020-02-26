@@ -1,4 +1,6 @@
 import React from "react";
+import LazyLoad from 'react-lazyload';
+
 
 function AboutApp() {
   return (
@@ -9,8 +11,9 @@ function AboutApp() {
           <strong>Jeevansathi </strong>Apps{" "}
         </span>
       </div>
-
-      <img className="group" src="../../static/images/group_64.png" />
+      <LazyLoad height={200}>
+      <img className="group" src="https://www.jeevansathi.com/images/jsms/photo/group_64.png" />
+      </LazyLoad>
       <p>
         Access quick & simple search, instant updates and a great user
         experience on your phone. Download our apps rated best in the online
@@ -18,7 +21,7 @@ function AboutApp() {
       </p>
       <img
         className="app-icon"
-        src="../../static/images/google_play_icon.png"
+        src="https://www.jeevansathi.com/images/jsms/photo/Google%20Play%20Icon.png"
       />
 
       <style jsx>{`

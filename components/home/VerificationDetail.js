@@ -1,20 +1,26 @@
 import React from "react";
 import { verificationData } from "../../static/data";
 
+
+
+
+
 function VerificationDetail() {
+
+ 
   return (
     <div className="container">
       <h3>More Than 20 years of</h3>
       <h2>
         Bringing People<span>Together</span>
       </h2>
-
-      <div style={{}}>
+ <div style={{}}>
         {verificationData.map(function(data) {
           return (
-            <div className="list-container">
+            <div key={data.imageURL} className="list-container">
               <div>
-                <img
+               <img
+                
                   style={{ padding: "0px 10px 0px 0px" }}
                   src={data.imageURL}
                 />
@@ -27,6 +33,7 @@ function VerificationDetail() {
           );
         })}
       </div>
+
       <style jsx>{`
         .container {
           font-family: "Cabin", sans-serif;

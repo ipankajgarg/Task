@@ -1,4 +1,8 @@
 const withCss = require("@zeit/next-css");
+const webpack = require('webpack')
+
+require('dotenv').config()
+
 
 module.exports = withCss({
   cssModules: true,
@@ -8,6 +12,10 @@ module.exports = withCss({
     localIdentName: "[local]___[hash:base64:5]"
   },
   webpack: (config, { isServer }) => {
+    const env = Object.keys(process.env).reduce((acc, curr) => {
+      acc[`process.env.${curr}`] = JSON.stringify(process.env[curr]);
+      return acc;
+}, {});
     if (isServer) {
       const antStyles = /antd\/.*?\/style\/css.*?/;
       const origExternals = [...config.externals];
@@ -28,6 +36,9 @@ module.exports = withCss({
         use: "null-loader"
       });
     }
+    
+    config.plugins.push(new webpack.DefinePlugin(env));
+
     return config;
   }
 });

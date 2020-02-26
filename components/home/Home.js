@@ -1,19 +1,35 @@
 import React, { useEffect, useState } from "react";
-import Banner from "./bannerSection/Banner";
+ import Banner from "./bannerSection/Banner";
 import Caption from "./Caption";
-import MembershipPlans from "./MembershipPlans";
-import MatchProfiles from "./MatchProfiles";
+// import MembershipPlans from "./MembershipPlans";
+// import MatchProfiles from "./MatchProfiles";
 import DownloadApp from "./DownloadApp";
 import About from "./About";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import BrowseMatrimonyProfiles from "./BrowseMatrimonyProfiles";
 import VerificationDetail from "./VerificationDetail";
-import SimpleSteps from "./SimpleSteps";
+  import SimpleSteps from "./SimpleSteps";
 import PrivacySetting from "./PrivacySetting";
-import JSExclusive from "./JSExclusive";
+// import JSExclusive from "./JSExclusive";
 import AboutApp from "./AboutApp";
 import Community from "./Community";
 import Icon from "../../static/svgHandler";
+import dynamic from 'next/dynamic'
+import GA from '../../static/GA'
+
+//Components that we dont want to serve on first request
+//start
+// const SimpleSteps =dynamic(() => import("./SimpleSteps").then(mod=>mod),{ssr:false})
+
+
+  const MembershipPlans =dynamic(() => import("./MembershipPlans").then(mod=>mod),{ssr:false})
+
+  const JSExclusive =dynamic(() => import("./JSExclusive").then(mod=>mod),{ssr:false}) 
+
+  const MatchProfiles =dynamic(() => import("./MatchProfiles").then(mod=>mod),{ssr:false})
+
+  const Footer =dynamic(() => import("./Footer").then(mod=>mod),{ssr:false})
+  //End
 
 let iStyle = {
   height: "22px",
@@ -22,7 +38,22 @@ let iStyle = {
   color: "#fff"
 };
 
-function Home() {
+
+if(typeof window !== "undefined"){
+  var GAObject = new GA();
+  }
+
+
+
+function Home() { 
+
+
+function trackRegistrationGA(GALabel){
+console.log("tracking")
+  GAObject.gaTrack('','jsms', 'Homepage_R', GALabel);
+}
+
+
   const [imagesLoadingAfterScroll, changeLoading] = useState(false);
   var imagesCalled = false;
 
@@ -70,17 +101,19 @@ function Home() {
   }, []);
 
   return (
+    //above logic is just for showing register button  and changing header color on scroll
     <>
       <div className="w-100 regFloatBtn" id="floatDivBtn">
         <div
           className="d-flex align-items-center floatDiv"
           onClick={e => {
-            // this.GAObject.gaTrack(
+            // GAObject.gaTrack(
             //   "",
             //   "jsms",
             //   "Homepage_R",
-            //   "registration floater "
+            //   "registration floater"
             // );
+            trackRegistrationGA("registration floater")
             window.location.href =
               "/profile/registration_new.php?source=home_float";
           }}
@@ -91,11 +124,11 @@ function Home() {
           </span>
         </div>
       </div>
-      <Banner />
+      <Banner  trackRegistrationGA={trackRegistrationGA} />
       <VerificationDetail />
-      <SimpleSteps />
+      <SimpleSteps trackRegistrationGA={trackRegistrationGA} />
       <PrivacySetting />
-      <MembershipPlans />
+      <MembershipPlans trackRegistrationGA={trackRegistrationGA}   />
       <JSExclusive />
       <MatchProfiles />
       <AboutApp />

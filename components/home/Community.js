@@ -4,6 +4,15 @@ import Icon from "../../static/svgHandler";
 // import Icon from "../../../common/components/svgHandler";
 // import GA from "../../../common/components/GA";
 // let API_SERVER_CONSTANTS
+import GA from "../../static/GA";
+
+
+if(typeof window !== "undefined"){
+  var GAObject = new GA();
+  }
+
+  
+
 let accValue = null;
 export default class Sec7links extends React.Component {
   constructor(props) {
@@ -19,8 +28,10 @@ export default class Sec7links extends React.Component {
   }
 
   getData() {
+const {BASE_URL} = process.env
+
     axios
-      .get(`https://www.jeevansathi.com/seo/communityLinks/seo/communityLinks`)
+      .get(`${BASE_URL}/seo/communityLinks/seo/communityLinks`)
       .then(response => {
         if (response && response.data && Array.isArray(response.data))
           this.setState({ communityLinks: response.data });
@@ -61,7 +72,8 @@ export default class Sec7links extends React.Component {
     }
   }
   setLinks(url) {
-    //this.GAObject.gaTrack('','jsms', 'Homepage_R', 'matrimonial footer');
+  GAObject.gaTrack('','jsms', 'Homepage_R', 'matrimonial footer');
+  console.log("ga tracking")
     window.location.href = url;
   }
   render() {
@@ -82,7 +94,10 @@ export default class Sec7links extends React.Component {
                   {this.state.communityLinks &&
                     this.state.communityLinks.map((item, key) => {
                       return (
-                        <div className="accordion_tab w-100">
+                        <div
+                          key={item.displayName}
+                          className="accordion_tab w-100"
+                        >
                           <div className="item">
                             <div className="accordion">
                               <div className="card border-0">
@@ -133,7 +148,10 @@ export default class Sec7links extends React.Component {
                                     <div className="links">
                                       {item.props.map(data => {
                                         return (
-                                          <div className="mar-0 wid50p allLinks">
+                                          <div
+                                            key={data.link}
+                                            className="mar-0 wid50p allLinks"
+                                          >
                                             <div className="matrimonial_state">
                                               <a
                                                 href="javascript:void(0)"

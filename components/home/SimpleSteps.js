@@ -12,7 +12,7 @@ const settings = {
   arrows: false
 };
 
-function SimpleSteps() {
+function SimpleSteps(props) {
   return (
     <div className="container simple-steps">
       <h3>Three Simple Steps to</h3>
@@ -22,7 +22,7 @@ function SimpleSteps() {
       <Slider {...settings}>
         {simpleSteps.map(function({ text, posiiton }, index) {
           return (
-            <div className="list-container">
+            <div key={text} className="list-container">
               <div
                 className="image"
                 style={{ backgroundPosition: posiiton }}
@@ -35,7 +35,10 @@ function SimpleSteps() {
           );
         })}
       </Slider>
-      <a href="profile/registration_new.php?source=home_hero">
+      <a onClick={() =>{
+        props.trackRegistrationGA("register steps")
+window.location.href ="/profile/registration_new.php?source=home_step"
+      }}>
         <div className="button-container">
           <button> Get Started by Registering Free</button>
         </div>
@@ -71,7 +74,7 @@ function SimpleSteps() {
         }
 
         .image {
-          background: url("../../static/images/how_it_works.svg") no-repeat;
+          background: url("https://static.jeevansathi.com/spa/dist/icons/How_it_works.svg") no-repeat;
           width: 210px;
           height: 110px;
           display: inline-block;

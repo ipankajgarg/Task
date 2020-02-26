@@ -165,19 +165,19 @@ export const verificationData = [
     heading: "100% Manually Screened Profiles",
     about:
       "  Search by location, community, profession & more from lakhs of active profiles.",
-    imageURL: "../static/images/screened_profiles.svg"
+    imageURL: "https://www.jeevansathi.com/images/jsms/photo/Screened%20Profiles.svg"
   },
   {
     heading: "Verifications by Personal Visit",
     about:
       "Special listing for profiles verified by our agents through personal visits.",
-    imageURL: "../static/images/verfications_by_personal_visit.svg"
+    imageURL: "https://www.jeevansathi.com/images/jsms/photo/Verfications%20by%20Personal%20Visit.svg"
   },
   {
     heading: "Lakhs of Success Stories",
     about:
       "Discover members like you who found their ideal match through Jeevansathi.",
-    imageURL: "../static/images/success_stories.svg"
+    imageURL: "https://www.jeevansathi.com/images/jsms/photo/Success%20Stories.svg"
   }
 ];
 
@@ -214,7 +214,7 @@ export const privacySetting = [
 export const exclusiveList = [
   {
     text: "Meet your Relationship Manager",
-    imgURL: "../static/images/meet_your_advisor.svg"
+    imgURL: "https://www.jeevansathi.com/images/jsms/photo/Meet_your_advisor.svg"
   },
   {
     text: "Communicate your preferences ",

@@ -3,7 +3,7 @@ import Header from "./Header";
 import SearchBox from "./SearchBox";
 import Button from "../../common/Button";
 
-function Banner() {
+function Banner(props) {
   return (
     <div className="banner-image">
       <div>
@@ -12,14 +12,20 @@ function Banner() {
           <p>Love is looking for you,</p>
           <h1> Be found</h1>
         </div>
-        <a href="profile/registration_new.php?source=home_hero">
+        <a
+        onClick={()=>{
+props.trackRegistrationGA("register_gnb")
+         window.location.href="profile/registration_new.php?source=home_hero"
+        }}
+        
+        >
           <button>Register Free</button>
         </a>
         {/* <SearchBox /> */}
       </div>
       <style jsx>{`
         .banner-image {
-          background: url(../../../static/images/cover_picture.jpg) left top
+          background: url(https://static.jeevansathi.com/spa/dist/icons/cover_picture.jpg) left top
             no-repeat;
           background-size: cover;
           min-height: 360px;

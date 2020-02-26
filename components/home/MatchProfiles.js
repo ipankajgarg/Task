@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import axios from "axios";
 
+const {BASE_URL} = process.env
+
 //TODO get this data through api call
 
 const settings = {
@@ -14,20 +16,24 @@ const settings = {
   slidesToShow: 1.05,
   slidesToScroll: 1,
   centerMode: true,
-  centerPadding: "4px"
+  centerPadding: "4px",
+  lazyLoad: true,
 };
 
 function MatchProfiles() {
   var [profiles, setProfiles] = useState([]);
 
-  useEffect(async () => {
-    try {
-      const response = await axios.get(
-        "https://www.jeevansathi.com/successStory/filter?sourceType=homepage&sourceValue=homepage&fromSPA=1"
-      );
-      console.log("res", response);
-      setProfiles(response.data.result);
-    } catch (err) {}
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          `${BASE_URL}/successStory/filter?sourceType=homepage&sourceValue=homepage&fromSPA=1`
+        );
+        
+        setProfiles(response.data.result);
+      } catch (err) {}
+    };
+    fetchData();
   }, []);
 
   return (
@@ -43,6 +49,7 @@ function MatchProfiles() {
         {profiles.map(function(profile) {
           return (
             <a
+              key={profile.SQUARE_PIC_URL}
               style={{ display: "block" }}
               href={`story?year=${profile.YEAR}&SID=${profile.SID}`}
             >

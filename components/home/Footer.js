@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="container footer">
       <div className="logo-title">
-        <img src="../../static/images/js_footer_logo.png" />
+        <img src="https://www.jeevansathi.com/images/jsms/photo/js_footer_logo.png" />
         <div>
           <cite>Jeevansathi</cite>
 
@@ -28,13 +28,15 @@ function Footer() {
           deeper and personal interaction with prospective brides, grooms and/or
           families.
           <br />
-          <p style={{ display: isVisible ? "block" : "none", marginTop: 0 }}>
+          <span
+            style={{ display: isVisible ? "inline" : "none", marginTop: 0 }}
+          >
             Please note: Jeevansathi is only meant for users with a bonafide
             intent to enter into a matrimonial alliance and is not meant for
             users interested in dating only. Jeevansathi platform should not be
             used to post any obscene material, such actions may lead to
             permanent deletion of the profile used to upload such content.
-          </p>
+          </span>
         </p>
         <div
           style={{
@@ -117,7 +119,7 @@ function Footer() {
         }
 
         a {
-          background-image: url(../../static/images/footerIconsSprite.svg);
+          background-image: url(https://static.jeevansathi.com/spa/dist/icons/FooterIconsSprite.svg);
           background-repeat: no-repeat;
           width: 17px;
           height: 17px;

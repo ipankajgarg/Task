@@ -1,9 +1,15 @@
 import React from "react";
 import theme from "../../../static/theme";
+import GA from "../../../static/GA";
 //import logo from "../../../static/images/logo.png";
 
 //TODO
 //To make images importable https://github.com/twopluszero/next-images
+
+
+if(typeof window !== "undefined"){
+var GAObject = new GA();
+}
 
 function Header() {
   return (
@@ -12,12 +18,16 @@ function Header() {
         <div className="logo">
           {" "}
           <a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-            <img src="../../../static/images/js_logo.svg" />
+            <img src="https://www.jeevansathi.com/images/jsms/photo/js_logo.svg" />
           </a>
         </div>
         <div className="login caption white fontreg">
-          <a href="/login">
-            <i className="user-icon white"></i>
+          <a onClick={()=>{
+          GAObject.gaTrack('','jsms', 'Homepage_R', 'login')
+        window.location.href="/login"
+          }
+        }  href="/login">
+            {/* <i className="user-icon white"></i> */}
             <span>Login</span>
           </a>
         </div>

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 //import MembershipDetail from "./OldMembershipDetail";
 import { membershipDetail } from "../../static/data";
 import Icon from "../../static/svgHandler";
+import GA from "../../static/GA";
 
 const settings = {
   dots: false,
@@ -17,7 +18,13 @@ const settings = {
   centerPadding: "4px"
 };
 
-function MembershipPlans() {
+
+
+if(typeof window !== "undefined"){
+  var GAObject = new GA();
+  }
+
+function MembershipPlans(props) {
   return (
     <div className="container">
       <div className="heading">
@@ -45,7 +52,7 @@ function MembershipPlans() {
             index
           ) {
             return (
-              <div style={{ backgroundColor }} className="card">
+              <div key={title} style={{ backgroundColor }} className="card">
                 <span
                   className="card-heading"
                   style={{ color: textColor, borderColor }}
@@ -53,15 +60,12 @@ function MembershipPlans() {
                   {title}
                 </span>
 
-                {list.map(function({
-                  text,
-                  iconColor,
-                  textColor,
-                  iconStyle,
-                  iconType
-                }) {
+                {list.map(function(
+                  { text, iconColor, textColor, iconStyle, iconType },
+                  index
+                ) {
                   return (
-                    <div style={{ height: 34 }}>
+                    <div key={text + index} style={{ height: 34 }}>
                       {/* <span style={{ color: iconColor }}>icon</span> */}
                       <Icon type={iconType} css={iconStyle} />
                       <span className="text" style={{ color: textColor }}>
@@ -72,7 +76,16 @@ function MembershipPlans() {
                 })}
 
                 <div style={{ textAlign: "center" }}>
-                  <a href={link}>
+                  <a onClick={()=>{
+                    if(index){
+                    GAObject.gaTrack('','jsms', 'Homepage_R', 'membership plans');
+                    console.log("GA tracking")
+                    }
+                    else{
+                      props.trackRegistrationGA("register membership")
+                    }
+                    window.location.href=link
+                  }}>
                     <button
                       style={{
                         backgroundColor: buttonColor,

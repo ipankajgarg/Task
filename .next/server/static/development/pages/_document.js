@@ -1326,6 +1326,8 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2___default.a {
     }), __jsx("script", {
       type: "text/javascript",
       src: "../static/font.js"
+    }), __jsx("script", {
+      src: "https://ssl.google-analytics.com/ga.js"
     })), __jsx("body", null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], null)));
   }
 

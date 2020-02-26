@@ -12,14 +12,14 @@ function JSExclusive() {
         </span>
       </div>
       <div>
-        <img className="exclusive" src="../../static/images/exclusive.png" />
+        <img className="exclusive" src="https://www.jeevansathi.com/images/jsms/photo/exclusive.png" />
       </div>
 
       <div>
         <ul>
           {exclusiveList.map(function({ imgURL, text }) {
             return (
-              <li>
+              <li key={text}>
                 <img src={imgURL} />
                 <span>{text}</span>
               </li>

@@ -33,6 +33,9 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700"
           ></link> */}
           <script type="text/javascript" src="../static/font.js" />
+          <script src="https://ssl.google-analytics.com/ga.js" />
+    
+
         </Head>
         <body>
           <Main />
