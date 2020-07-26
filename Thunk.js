@@ -7,7 +7,7 @@ export const getSearchDataThunk = (value, page = 1) => dispatch => {
   dispatch(actions.getSearchDataLoading());
 
   return axios.get(`${BASE_URL}?q=${value}&page=${page}`).then(res => {
-    console.log(res);
+    // console.log(res);
     dispatch(actions.getSearchDataSuccess({ ...res.data, page }));
   });
 };
