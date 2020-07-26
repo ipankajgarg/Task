@@ -1,25 +1,69 @@
-import React from "react";
-import Head from "next/head";
-import BannerSection from "../components/home/bannerSection/Banner";
-import Home from "../components/home/Home";
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import Input from "../components/Input";
+import CardList from "../components/CardList";
+import { getSearchDataThunk, BASE_URL } from "../Thunk";
 
+class Index extends Component {
+  state = { value: "naruto" };
 
+  onHandleClick = e => {
+    this.setState({ value: e.target.value });
+  };
 
-// console.log("env",process.env.BASE_URL)
+  render() {
+    const { searchResult } = this.props;
+    const { value } = this.state;
+    return (
+      <div
+        style={{
+          minHeight: "100vh",
+          backgroundColor: "#1D79C0",
+          padding: "0px 100px"
+        }}
+      >
+        <Input value={value} onHandleClick={this.onHandleClick} />
 
-export default function() {
-  
-  return <div>
-    
-    <Head>
-        <title>Matrimony, Marriage, Free Matrimonial Sites, Match Making</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Most trusted Indian matrimony site. 10Lac+ Profiles, 3-level profile check, Search by caste and community, Privacy control &amp; Register FREE! ‘Be Found’ Now"></meta>
-        <meta name="author" content="https://www.jeevansathi.com"></meta>
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
-        <link rel="canonical" href="https://www.jeevansathi.com/"></link>
-        <link rel="icon" href="../static/images/apple-touch-icon-72x72_new.png"></link>
-      </Head>
-    <Home />
-    </div>;
+        <div
+          style={{
+            color: "white",
+            textAlign: "center",
+            marginTop: 20,
+            fontSize: 20
+          }}
+        >
+          {searchResult.isLoading ? (
+            "Fetching...."
+          ) : (
+            <div>
+              <span style={{ color: "rgba(255,255,255,0.4)" }}>
+                Requesting:
+              </span>
+              <span> {`${BASE_URL}?q=${value}`}</span>
+            </div>
+          )}
+        </div>
+
+        {searchResult.data && (
+          <CardList
+            searchResult={searchResult.data.results}
+            page={searchResult.data.page}
+            value={value}
+            isPaginationLoading={searchResult.isPaginationLoading}
+          />
+        )}
+      </div>
+    );
+  }
 }
+
+Index.getInitialProps = async ({ reduxStore }) => {
+  await reduxStore.dispatch(getSearchDataThunk("naruto"));
+  return {};
+};
+
+function mapStateToProps({ searchResult }) {
+  return { searchResult };
+}
+
+export default connect(mapStateToProps, { getSearchDataThunk })(Index);

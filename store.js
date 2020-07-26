@@ -1,72 +1,48 @@
-import { createStore, applyMiddleware } from 'redux'
-import { composeWithDevTools } from 'redux-devtools-extension'
-import thunkMiddleware from 'redux-thunk'
+import { createStore, applyMiddleware, combineReducers } from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
+import thunkMiddleware from "redux-thunk";
 
-const exampleInitialState = {
-  lastUpdate: 0,
-  light: false,
-  count: 0
-}
+import * as types from "./types";
 
-export const actionTypes = {
-  TICK: 'TICK',
-  INCREMENT: 'INCREMENT',
-  DECREMENT: 'DECREMENT',
-  RESET: 'RESET'
-}
+const fetchDataReducer = (
+  state = { isLoading: false, error: "", isPaginationLoading: false },
+  { type, payload }
+) => {
+  switch (type) {
+    case types.searchDataLoading:
+      return { ...state, isLoading: true };
+    case types.searchDataSuccess:
+      return { ...state, data: payload, isLoading: false, error: "" };
+    case types.searchDataFailure:
+      return { ...state, isLoading: false, error: payload };
 
-// REDUCERS
-export const reducer = (state = exampleInitialState, action) => {
-  switch (action.type) {
-    case actionTypes.TICK:
-      return Object.assign({}, state, {
-        lastUpdate: action.ts,
-        light: !!action.light
-      })
-    case actionTypes.INCREMENT:
-      return Object.assign({}, state, {
-        count: state.count + 1
-      })
-    case actionTypes.DECREMENT:
-      return Object.assign({}, state, {
-        count: state.count - 1
-      })
-    case actionTypes.RESET:
-      return Object.assign({}, state, {
-        count: exampleInitialState.count
-      })
+    case types.searchPaginationDataLoading:
+      return { ...state, isPaginationLoading: true };
+    case types.searchPaginationDataSuccess:
+      state.data.results = [...state.data.results, ...payload.results];
+      state.data.page = payload.page;
+      return {
+        ...state,
+        isPaginationLoading: false,
+        error: ""
+      };
+    case types.searchDataSuccess:
+      return { ...state, isPaginationLoading: false, error: payload };
     default:
-      return state
+      return state;
   }
-}
+};
 
-// ACTIONS
-export const serverRenderClock = isServer => dispatch => {
-  return dispatch({ type: actionTypes.TICK, light: !isServer, ts: Date.now() })
-}
+const reducers = {
+  searchResult: fetchDataReducer
+};
 
-export const startClock = dispatch => {
-  return setInterval(() => {
-    dispatch({ type: actionTypes.TICK, light: true, ts: Date.now() })
-  }, 1000)
-}
+const rootReducer = combineReducers(reducers);
 
-export const incrementCount = () => {
-  return { type: actionTypes.INCREMENT }
-}
-
-export const decrementCount = () => {
-  return { type: actionTypes.DECREMENT }
-}
-
-export const resetCount = () => {
-  return { type: actionTypes.RESET }
-}
-
-export function initializeStore (initialState = exampleInitialState) {
+export function initializeStore(initialState) {
   return createStore(
-    reducer,
+    rootReducer,
     initialState,
     composeWithDevTools(applyMiddleware(thunkMiddleware))
-  )
+  );
 }
